@@ -1,7 +1,8 @@
-import Link from 'next/link';
 import logoImg from '../../assets/logo.png';
 import classes from './MainHeader.module.css';
 import Image from 'next/image';
+import NavLink from './NavLink';
+import Link from 'next/link';
 
 const MainHeader = () => {
 	return (
@@ -12,7 +13,7 @@ const MainHeader = () => {
 					alt="A plate with food on it"
 					width={300}
 					height={300}
-                    priority
+					priority
 				/>
 				NextLevel Food
 			</Link>
@@ -20,10 +21,10 @@ const MainHeader = () => {
 			<nav className={classes.nav}>
 				<ul>
 					<li>
-						<Link href="/meals">Browse Meals</Link>
+						<NavLink href="/meals">Meals</NavLink>
 					</li>
 					<li>
-						<Link href="/community">Community</Link>
+						<NavLink href="/community">Community</NavLink>
 					</li>
 				</ul>
 			</nav>
