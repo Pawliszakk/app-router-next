@@ -1,10 +1,5 @@
 const MealsLayout = ({ children }) => {
-	return (
-		<>
-			<p>Mealswww</p>
-			{children}
-		</>
-	);
+	return <>{children}</>;
 };
 
 export default MealsLayout;

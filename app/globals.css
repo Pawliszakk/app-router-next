@@ -34,7 +34,6 @@ svg {
 	color: #262626;
 	text-transform: uppercase;
 	background: linear-gradient(90deg, #f9572a, #ffc905);
-	-webkit-text-fill-color: transparent;
 	background-size: cover;
 	background-position: center;
 	font-family: 'Montserrat', sans-serif;
