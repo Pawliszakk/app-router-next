@@ -15,7 +15,10 @@ const MealDeatailPage = async ({ params }) => {
 		<>
 			<header className={classes.header}>
 				<div className={classes.image}>
-					<Image src={meal.image} fill />
+					<Image
+						src={`https://next-14-aws-oskar-bucket.s3.eu-central-1.amazonaws.com/${meal.image}`}
+						fill
+					/>
 				</div>
 				<div className={classes.headerText}>
 					<h1>{meal.title}</h1>
