@@ -4,6 +4,11 @@ import MealsGrid from '../../components/Meals/MealsGrid';
 import { getMeals } from '../../lib/meals';
 import { Suspense } from 'react';
 
+export const metadata = {
+	title: 'All meals',
+	description: 'Delicious meals, shared by a food-loving community.',
+};
+
 const Meals = async () => {
 	const meals = await getMeals();
 	return <MealsGrid meals={meals} />;
@@ -27,7 +32,9 @@ const MealsPage = async () => {
 				</p>
 			</header>
 			<main className={classes.main}>
-				<Suspense fallback={<p className={classes.loading}>Fetching your meals...</p>}>
+				<Suspense
+					fallback={<p className={classes.loading}>Fetching your meals...</p>}
+				>
 					<Meals />
 				</Suspense>
 			</main>
